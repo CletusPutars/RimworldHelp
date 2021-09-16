@@ -1,0 +1,18 @@
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.GridsUtility.GetEdifice (Verse.IntVec3 c, Verse.Map map) [0x00000] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at MorePrecepts.Thing_Patch.Ingested (Verse.Thing __instance, Verse.Pawn ingester, System.Single nutritionWanted) [0x00063] in <ae1e5fbebbd748c587095cd294cb7ab2>:0 
+  at (wrapper dynamic-method) Verse.Thing.Verse.Thing.Ingested_Patch6(Verse.Thing,Verse.Pawn,single)
+  at RimWorld.Planet.Caravan_NeedsTracker.TrySatisfyFoodNeed (Verse.Pawn pawn, RimWorld.Need_Food food) [0x0003d] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at (wrapper dynamic-method) RimWorld.Planet.Caravan_NeedsTracker.RimWorld.Planet.Caravan_NeedsTracker.TrySatisfyPawnNeeds_Patch2(RimWorld.Planet.Caravan_NeedsTracker,Verse.Pawn)
+  at RimWorld.Planet.Caravan_NeedsTracker.TrySatisfyPawnsNeeds () [0x0001f] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at RimWorld.Planet.Caravan_NeedsTracker.NeedsTrackerTick () [0x00000] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at (wrapper dynamic-method) RimWorld.Planet.Caravan.RimWorld.Planet.Caravan.Tick_Patch2(RimWorld.Planet.Caravan)
+  at RimWorld.Planet.WorldObjectsHolder.WorldObjectsHolderTick () [0x00029] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at RimWorld.Planet.World.WorldTick () [0x00016] in <b64badbf3c3d41018b3ca5d3e8c77771>:0 
+  at (wrapper dynamic-method) Verse.TickManager.Verse.TickManager.DoSingleTick_Patch3(Verse.TickManager)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Verse.Log:Error (string)
+(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch3 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+(wrapper dynamic-method) Verse.Game:Verse.Game.UpdatePlay_Patch1 (Verse.Game)
+Verse.Root_Play:Update ()
